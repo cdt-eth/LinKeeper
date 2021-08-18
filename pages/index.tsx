@@ -1,5 +1,5 @@
-import Head from 'next/head';
-import { links } from '../data/links';
+import Head from "next/head";
+import { links } from "../data/links";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
                 <p className="text-lg font-medium">{link.title}</p>
                 <p className="text-gray-600">{link.description}</p>
                 <a href={link.url} className="flex hover:text-blue-500">
-                  {link.url.replace(/(^\w+:|^)\/\//, '')}
+                  {link.url.replace(/(^\w+:|^)\/\//, "")}
                   <svg
                     className="w-4 h-4 my-1"
                     fill="currentColor"
